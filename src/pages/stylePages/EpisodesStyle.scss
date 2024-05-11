@@ -1,9 +1,103 @@
-h1 {
-  text-align: center;
-  color: #00ffef;
-  font-size: 40px;
-  font-family: Averia Sans Libre;
-  line-height: auto;
-  border-style: hidden;
-  outline: none;
+.main-episodes {
+  .choose-seasons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      text-align: center;
+      color: #00ffef;
+      font-size: 40px;
+      font-family: "Averia Sans Libre";
+      line-height: auto;
+      border-style: hidden;
+      outline: none;
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 15px;
+    }
+
+    li {
+      margin: 0 10px;
+      list-style-type: none;
+
+      .season {
+        background-color: #00ffef;
+        height: 41px;
+        width: 50px;
+        border-radius: 15px;
+        color: #dbff00;
+        font-size: 30px;
+        font-family: "Averia Serif Libre";
+        line-height: auto;
+        border: 2px solid #000000;
+        -webkit-text-stroke: 1px #000;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: transform 0.3s ease;
+
+        &:active {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .episodes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+
+    .grid-episode {
+      .block-episode {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .img-watch {
+        width: 100%;
+        height: auto;
+        height: 125px;
+        width: 230px;
+        border-radius: 15px;
+      }
+
+      .watch-btn {
+        background-color: #00ffef;
+        height: 32px;
+        width: 195px;
+        border: #000;
+        cursor: pointer;
+        color: #f9ff00;
+        text-align: center;
+        vertical-align: text-top;
+        font-size: 22px;
+        font-family: Averia Serif Libre;
+        line-height: auto;
+        border: 0.5px solid #000000;
+        width: 172px;
+        -webkit-text-stroke: 1px #000000b7;
+      }
+      .info-btn {
+        background-color: #00ffef;
+        height: 32px;
+        width: 190px;
+        border-radius: 30px;
+        color: #f9ff00;
+        text-align: center;
+        font-size: 24px;
+        font-family: Averia Serif Libre;
+        line-height: auto;
+        -webkit-text-stroke: 1px #000000b7;
+      }
+    }
+  }
 }
