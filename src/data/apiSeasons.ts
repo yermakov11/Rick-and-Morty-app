@@ -3,8 +3,10 @@ import { KEY } from "./key_movies";
 
 export interface Episode {
   id: number;
-  still_path?: string;
+  still_path: string;
   episode_number: number;
+  overview:string,
+  character:string,
 }
 
 export async function getDataSeasons(seasonNumber: number): Promise<Episode[]>{
@@ -17,3 +19,6 @@ export async function getDataSeasons(seasonNumber: number): Promise<Episode[]>{
     throw error; 
   }
 }
+
+
+
