@@ -14,6 +14,7 @@ export default function Episodes() {
     try {
       const response = await getDataSeasons(season);
       setDataEpisodes(response);
+      console.log(response);
     } catch (error) {
       console.error("Error fetching episodes:", error);
     }
@@ -33,7 +34,7 @@ export default function Episodes() {
       <Header />
       <main className="main-episodes">
         <div className="choose-seasons">
-          <h1>Seasons {selectSeason}</h1>
+          <h1>Season {selectSeason}</h1>
           <ul>
             {[1, 2, 3, 4, 5, 6, 7].map((season) => (
               <li key={season}>

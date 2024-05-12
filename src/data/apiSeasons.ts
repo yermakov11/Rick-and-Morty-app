@@ -4,9 +4,16 @@ import { KEY } from "./key_movies";
 export interface Episode {
   id: number;
   still_path: string;
+  season_number: number;
   episode_number: number;
   overview:string,
-  character:string,
+  guest_stars:[
+    {
+      id:number,
+      character:string,
+    },
+  ],
+
 }
 
 export async function getDataSeasons(seasonNumber: number): Promise<Episode[]>{

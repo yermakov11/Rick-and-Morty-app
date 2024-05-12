@@ -1,4 +1,5 @@
 // ModalInfoStyle.scss
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -17,35 +18,66 @@
 }
 
 .modal-content {
-  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eaff00;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 450px;
   overflow-y: auto;
 }
 
 .modal-list p {
+  font-size: 18px;
+  color:  #00ffef;
+  font-family: Averia Serif Libre;
+  line-height: auto;
+  -webkit-text-stroke: 1px #000000b7;
   margin-bottom: 10px;
 }
-
+.modal-list h1{
+  font-size: 24px;
+  font-family: Averia Serif Libre;
+  line-height: auto;
+  -webkit-text-stroke: 1px #000000b7;
+  margin-bottom: 10px;
+}
+.modal-list h2{
+  font-size: 20px;
+  color:  #00ffef;
+  font-family: Averia Serif Libre;
+  line-height: auto;
+  -webkit-text-stroke: 1px #000000b7;
+}
+.modal-list li{
+  font-size: 14px;
+  color:  #00ffef;
+  font-family: Averia Serif Libre;
+  line-height: auto;
+  -webkit-text-stroke: 0.5px #000000b7;
+  list-style-type: none;
+}
 .modal-list p:last-child {
   margin-bottom: 0;
 }
 
 .modal-container button {
-  padding: 10px 20px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  background-color: #00ffef;
+  height: 32px;
+  width: 190px;
+  border-radius: 30px;
+  color: #f9ff00;
+  text-align: center;
+  font-size: 24px;
+  font-family: Averia Serif Libre;
+  line-height: auto;
+  -webkit-text-stroke: 1px #000000b7;
 }
 
 .modal-container button:hover {
-  background-color: #0056b3;
+  background-color: #c1c1b7cc;
 }
