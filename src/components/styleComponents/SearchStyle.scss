@@ -1,0 +1,24 @@
+.block-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  input {
+    background-color: #d9d9d9;
+    vertical-align: middle;
+    height: 31px;
+    width: 189px;
+    font-size: 18px;
+    border-radius: 30px;
+    font-family: Averia Sans Libre;
+  }
+  input::placeholder {
+    color: #000000;
+    text-align: left;
+    vertical-align: text-bottom;
+    font-size: 18px;
+    font-family: Averia Sans Libre;
+    line-height: auto;
+    border-style: hidden;
+    outline: none;
+  }
+}

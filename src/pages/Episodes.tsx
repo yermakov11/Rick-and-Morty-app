@@ -14,7 +14,6 @@ export default function Episodes() {
     try {
       const response = await getDataSeasons(season);
       setDataEpisodes(response);
-      console.log(response);
     } catch (error) {
       console.error("Error fetching episodes:", error);
     }
