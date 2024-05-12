@@ -8,3 +8,22 @@ h1 {
     outline: none;
   }
   
+  .block-location{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    .list-location{
+        text-align: center;
+        background-color: #00ffef;
+        font-family:  Averia Sans Libre;
+        font-size: 20px;
+        color: #fdfd00;
+        width: 200px;
+        height: 120px;
+        border: 1px black solid;
+        border-radius: 15px;
+        -webkit-text-stroke: 1px #000000b7;
+    }
+  }
+  
+  
